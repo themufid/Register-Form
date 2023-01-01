@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h2 id="hid">Registration Form</h2>
+        <div id="success" class="suc"><h2>Form has been submitted successfully!<br>
+        
+        </h2></div>
+        <div id="error_message"></div>
+        <form id="myform" name="form" onsubmit="return val()">
+            <div class="input_field">
+                <input type="text" placeholder="Name" id="name">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="input_field">
+                <input type="password" placeholder="Password" id="pass">
+            </div>
+            <div class="input_field">
+                <input type="password" placeholder="Confirm Password" id="cpass">
+            </div>
+            <input type="submit" value="submit" onclick="return val()">
+        </form>
+    </div>
+  <div class="creds">Created by <a href="https://www.linkedin.com/in/rodhifaisalmufid/" target="_blank">@The Mufid</a></div>
+</body>
+</html>
